@@ -4,9 +4,9 @@ import Button from "../button/button";
 function Tabs() {
   return (
     <div class="tabs">
-      <Button />
-      <Button />
-      <Button />
+      <Button>Самый дешевый</Button>
+      <Button>Самый быстрый</Button>
+      <Button>Оптимальный</Button>
     </div>
   );
 }

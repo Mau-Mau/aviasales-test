@@ -9,7 +9,7 @@ function TicketInfo() {
         <Tabs />
         <TicketList>
         </TicketList>
-        <Button />
+        <Button>Показать еще 5 билетов!</Button>
     </section>
   );
 }

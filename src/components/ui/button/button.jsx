@@ -1,10 +1,11 @@
 import React from "react";
 
-function Button() {
+function Button({children, minWidth}) {
   return <button 
-    class="button" 
+    className="button" 
     type="button"
-  >Кнопка</button>;
+    style={{minWidth: minWidth}}
+  >{children}</button>;
 }
 
 export default Button;
