@@ -1,11 +1,13 @@
 import React from "react";
 
-function AirlineIcon() {
+function AirlineIcon({carrier}) {
+  const carrierSrc = `../../../assets/logo-${carrier}.svg`;
+
   return <img 
     width={110} 
     height={36} 
-    src="../../../assets/logo-s7.svg" 
-    alt="S7 Airlines logo"
+    src={carrierSrc}
+    alt={carrier}
   ></img>;
 }
 

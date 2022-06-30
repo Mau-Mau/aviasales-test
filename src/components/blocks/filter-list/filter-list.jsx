@@ -1,14 +1,18 @@
 import React from "react";
 import FilterItem from "../../ui/filter-item/filter-item";
 
-function FilterList() {
+function FilterList({filters}) {
   return (
-    <section class="filter-list">
+    <section className="filter-list">
       <form 
-        class="filter-list__form" 
+        className="filter-list__form" 
         action="#" 
         method="POST">
-        <FilterItem />
+          {filters.map((filter) => (
+            <fieldset className="filter-item" key={filters.id}>
+            <FilterItem filter={filter}/>
+            </fieldset>
+          ))}
       </form>
     </section>
   );

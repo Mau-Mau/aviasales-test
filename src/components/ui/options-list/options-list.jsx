@@ -1,14 +1,17 @@
 import React from "react";
-import Checkbox from "../checkbox/checkbox";
+import InputItem from "../input-item/input-item";
 
-function FilterItem() {
+function OptionsList({filterOptions, ...prop}) {
   return (
-      <ul class="options-list">
-        <li class="options-list__item">
-          <Checkbox />
-        </li>
+      <ul className="options-list">
+        {filterOptions.map((filterOption) => (
+          <li className="options-list__item" key={filterOptions.id}>
+            <InputItem filterOption={filterOption} {...prop}/>
+          </li>
+          ))}
+        
       </ul>
   );
 }
 
-export default FilterItem;
+export default OptionsList;

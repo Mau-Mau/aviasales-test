@@ -3,13 +3,16 @@ import Tabs from "../../ui/tabs/tabs";
 import TicketList from "../../ui/ticket-list/ticket-list";
 import Button from "../../ui/button/button";
 
-function TicketInfo() {
+function TicketInfo({tickets}) {
   return (
-    <section class="ticket-info">
-        <Tabs />
-        <TicketList>
-        </TicketList>
-        <Button>Показать еще 5 билетов!</Button>
+    <section className="ticket-info">
+      {tickets?.length ? (
+        <>
+          <Tabs />
+          <TicketList tickets={tickets} />
+          <Button>Показать еще 5 билетов!</Button>
+        </>
+      ) : null}
     </section>
   );
 }

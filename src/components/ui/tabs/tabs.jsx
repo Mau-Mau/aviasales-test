@@ -3,7 +3,7 @@ import Button from "../button/button";
 
 function Tabs() {
   return (
-    <div class="tabs">
+    <div className="tabs">
       <Button>Самый дешевый</Button>
       <Button>Самый быстрый</Button>
       <Button>Оптимальный</Button>

@@ -3,8 +3,8 @@ import Logo from "../../ui/logo/logo";
 
 function Header() {
   return (
-    <header class="page-header">
-      <h1 class="page-header__title">Билеты по заданному маршруту</h1>
+    <header className="page-header">
+      <h1 className="page-header__title">Билеты по заданному маршруту</h1>
       <Logo />
     </header>
   );

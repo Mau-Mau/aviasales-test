@@ -3,10 +3,10 @@ import React from "react";
 function Logo() {
   return (
     <a
-      class="logo" 
+      className="logo" 
       href="#">
       <img 
-        class="logo__image"
+        className="logo__image"
         src="../../../assets/logo-aviasales.svg"  
         width="60" 
         height="60"

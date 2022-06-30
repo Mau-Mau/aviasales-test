@@ -3,14 +3,14 @@ import Price from "../price/price";
 import AirlineIcon from "../airline-icon/airline-icon";
 import TransferInfo from "../transfer-info/transfer-info";
 
-function TicketCard() {
+function TicketCard({ticket}) {
   return (
-    <div class="ticket-card">
-      <div class="ticket-card__scope">
-        <Price />
-        <AirlineIcon />
+    <div className="ticket-card">
+      <div className="ticket-card__scope">
+        <Price>{ticket.price}</Price>
+        <AirlineIcon carrier={ticket.carrier}></AirlineIcon>
       </div>
-      <TransferInfo />
+      <TransferInfo segments={ticket.segments}></TransferInfo>
     </div>
   );
 }

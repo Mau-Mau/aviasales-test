@@ -4,12 +4,11 @@ const ticketList = [
     // Цена в рублях
     price: 13400,
     // Код авиакомпании (iata)
-    carrier: "s7",
+    carrier: "S7 Airlines",
     // Массив перелётов.
     // В тестовом задании это всегда поиск "туда-обратно" значит состоит из двух элементов
     segments: [
       {
-        id: 0,
         // Код города (iata)
         origin: "MOW",
         // Код города (iata)
@@ -22,7 +21,6 @@ const ticketList = [
         duration: 1275,
       },
       {
-        id: 1,
         // Код города (iata)
         origin: "HKT",
         // Код города (iata)
@@ -39,10 +37,9 @@ const ticketList = [
   {
     id: 1,
     price: 12800,
-    carrier: "utair",
+    carrier: "Utair",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 12:00",
@@ -50,7 +47,6 @@ const ticketList = [
         duration: 1300,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 12:30",
@@ -62,10 +58,9 @@ const ticketList = [
   {
     id: 2,
     price: 11000,
-    carrier: "s7",
+    carrier: "S7 Airlines",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 09:00",
@@ -73,7 +68,6 @@ const ticketList = [
         duration: 780,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 22:00",
@@ -85,10 +79,9 @@ const ticketList = [
   {
     id: 3,
     price: 15600,
-    carrier: "s7",
+    carrier: "S7 Airlines",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 13:00",
@@ -96,7 +89,6 @@ const ticketList = [
         duration: 1500,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 18:20",
@@ -108,10 +100,9 @@ const ticketList = [
   {
     id: 4,
     price: 14500,
-    carrier: "utair",
+    carrier: "Utair",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 13:50",
@@ -119,7 +110,6 @@ const ticketList = [
         duration: 1275,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 23:30",
@@ -131,10 +121,9 @@ const ticketList = [
   {
     id: 5,
     price: 17000,
-    carrier: "utair",
+    carrier: "Utair",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 17:20",
@@ -142,7 +131,6 @@ const ticketList = [
         duration: 1420,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 09:30",
@@ -154,10 +142,9 @@ const ticketList = [
   {
     id: 6,
     price: 17200,
-    carrier: "utair",
+    carrier: "Utair",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 11:40",
@@ -165,7 +152,6 @@ const ticketList = [
         duration: 750,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 18:15",
@@ -177,10 +163,9 @@ const ticketList = [
   {
     id: 7,
     price: 12500,
-    carrier: "s7",
+    carrier: "S7 Airlines",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 08:00",
@@ -188,7 +173,6 @@ const ticketList = [
         duration: 820,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 09:00",
@@ -200,10 +184,9 @@ const ticketList = [
   {
     id: 8,
     price: 13900,
-    carrier: "s7",
+    carrier: "S7 Airlines",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 11:20",
@@ -211,7 +194,6 @@ const ticketList = [
         duration: 800,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 20:30",
@@ -223,10 +205,9 @@ const ticketList = [
   {
     id: 9,
     price: 12400,
-    carrier: "s7",
+    carrier: "S7 Airlines",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 07:00",
@@ -234,7 +215,6 @@ const ticketList = [
         duration: 1450,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 16:30",
@@ -246,10 +226,9 @@ const ticketList = [
   {
     id: 10,
     price: 13100,
-    carrier: "s7",
+    carrier: "S7 Airlines",
     segments: [
       {
-        id: 0,
         origin: "MOW",
         destination: "HKT",
         date: "30.06.2022 08:20",
@@ -257,7 +236,6 @@ const ticketList = [
         duration: 1240,
       },
       {
-        id: 1,
         origin: "HKT",
         destination: "MOW",
         date: "10.07.2022 14:30",

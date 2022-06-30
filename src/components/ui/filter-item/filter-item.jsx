@@ -1,12 +1,12 @@
 import React from "react";
 import OptionsList from "../options-list/options-list";
 
-function FilterItem() {
+function FilterItem({filter}) {
   return (
-    <fieldset class="filter-item">
-      <legend class="filter-item__title">Количество пересадок</legend>
-      <OptionsList />
-    </fieldset>
+    <>
+      <legend className="filter-item__title">{filter.title}</legend>
+      <OptionsList filterOptions={filter.options} filterType={filter.type}/>
+    </>
   );
 }
 
