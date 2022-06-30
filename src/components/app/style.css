@@ -205,8 +205,16 @@ body {
   text-transform: uppercase;
 }
 
-.transfer-info__item {
+.transfer-info__heading, .transfer-info__description {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+}
+
+.transfer-info__flight {
+  width: 100%;
+}
+
+.transfer-info__flight:not(:last-child) {
+  margin-bottom: 10px;
 }
